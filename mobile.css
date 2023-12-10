@@ -1,0 +1,8 @@
+@media only screen and (max-width: 740px) {
+  header {
+    background-color: red;
+  }
+  header .navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

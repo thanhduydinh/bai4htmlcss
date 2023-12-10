@@ -1,0 +1,305 @@
+@import "reset", "variables";
+
+// Header 
+header {
+    display: flex;
+    align-items: center ;
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    width: 60%;
+    cursor: pointer;
+
+    svg {
+        margin: 10px 0px 0 40px;
+    }
+}
+
+header .navbar {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+        color: #000;
+        text-align: center;
+        font-family: New York Small;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0 3%;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;   
+        cursor: pointer;    
+    }
+
+    li:first-child {
+        ::after { 
+            content: "";
+            width: 2.5rem;
+            height: 3px;
+            background-color: #5F4A31;
+            position: absolute;
+            bottom: -25px;
+            border-radius: 10px;
+            left: 5.6rem;
+        }
+    }
+}
+
+.fa-bars { 
+    display: none;
+}
+
+// Main 
+.slider {
+    margin: 6% 0 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        width: 49%;
+        margin: 0 24%;
+    }
+
+    h1 {
+        width: 45%;
+        margin: 4% 24% 0;
+        color: #000;
+        text-align: center;
+        font-family: New York Extra Large;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    p {
+        width: 35%;
+        margin: 18px 24%;
+        text-align: center;
+        font-family: SF Mono;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+}
+
+.line {
+    background-color: #776B5D;
+    width: 38%;
+    height: 2px;
+    margin: auto;
+}
+
+.acticles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h1 { 
+        width: 100%;
+        color: #000;
+        text-align: center;
+        font-family: New York Extra Large;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .acticle { 
+        max-width: 54%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(243px, 1fr)); /* Thiết lập kích thước cột tối thiểu và tối đa */
+        grid-gap: 10px; 
+        list-style: none;
+    
+        li {
+            padding: 0 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+            cursor: pointer;
+
+            img {
+                width: 340px;
+                height: 176px;
+            }
+
+            p {
+                color: #000;
+                text-align: center;
+                font-family: SF Pro Display;
+                font-size: 0.9rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%; /* 26.4px */
+            }
+        }
+    }
+}
+
+// Footer 
+footer {
+    color: #FFF;
+    background-color: #000;
+
+    p {
+        width: 40%;
+        margin: 0 30%;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+.title {
+    font-family: SF Pro Text;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 140% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    li:nth-child(even) {
+        font-weight:200;
+        text-transform: capitalize;
+    }
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 1.2rem 0;   
+    padding: 0;
+
+    li {
+        text-decoration : underline;
+        margin: 0 0.5rem;
+    }
+}
+
+.description {
+    font-size: 0.5rem;
+    line-height: 1rem;
+    padding-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 740px) {
+    header {       
+       .navbar {
+            display: none;
+       }
+
+        .logo svg {
+            margin: 14px 0px 0 24px;
+        }
+
+       .fa-bars {
+            display: block;
+            position: absolute;
+            right: 10px;
+            font-size: 27px;
+       }
+    }
+
+    .slider {
+        img {
+            width: 100%;
+        }
+        h1 { 
+            width: 88%;
+            margin: 4% 6% 0;
+        }
+        p {
+            width: 88%;
+            margin: 4% 6% 10%;
+        }
+    }
+
+    .line {
+        background-color: #000;
+        width: 100%;
+        height: 2px;
+    }
+
+    .acticles {
+        .acticle {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            
+            li {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 20px;
+
+                img {
+                    width: 90%;
+                    height: auto;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 120%;
+                    margin: 20px 92px;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        .title {
+            li {
+                display: none;
+            }
+
+            li:nth-child(2) {
+                display: block;
+            }
+
+            li:nth-child(3) {
+                display: block;
+            }
+
+            li:nth-child(4) {
+                display: block;
+            }
+        }
+
+        p {
+            width: 80%;
+            margin: 0 10%;
+            font-size: 0.6rem;
+        }
+    }
+ }  

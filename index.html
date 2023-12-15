@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.scss">
     <link rel="stylesheet" href="./variables.scss">
@@ -40,15 +41,103 @@
 
     <main>
         <div class="slider">
-            <img src="./asset/img/e7e1275cacd73edc67b4afe128d222d5.png" alt="">
             <h1>A few words about this blog platform, Ghost, and how this site was made</h1>
             <p>Why Ghost (& Figma) instead of Medium, WordPress or other options?</p>
+            <img src="./asset/img/e7e1275cacd73edc67b4afe128d222d5.png" alt="">
         </div>
 
         <div class="line"></div>
 
+        <div class="blog">
+            <div class="blog__header">
+                <div class="blog__header--user">
+                    <img src="./asset/img/image 3.png" alt="">
+                    <div>
+                        <p class="name">Mika MAtikainen</p>
+                        <p class="time">Apr 15, 2020 · 4 min read</p>
+                    </div>
+                </div>
+
+                <div class="blog__socical">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>   
+
+            <div class="blog__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra.</br> </br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis posuere ligula. In eu dui molestie, molestie lectus eu, semper lectus.</p>
+                <h2>Next on the pipeline</h2>
+                <p>Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</br> </br> Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et fringilla.</p>
+
+                <div class="blog__body--img">
+                    <img src="./asset/img/Rectangle 8.png" alt="">
+                    <p>Image caption centered this way and I’ll make this a bit longer  to indicate the amount of line-height.</p>
+                </div>
+                <p>Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis posuere ligula.</br> </br> In eu dui molestie, molestie lectus eu, semper lectus. Proin at justo lacinia, auctor nisl et, consequat ante. Donec sit amet nisi arcu. Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et fringilla. Nulla non volutpat leo.</p>
+                <p style="margin-top: 40px;">A list looks like this:</p>
+                <ul>
+                    <li>First item in the list</li>
+                    <li>Second item in the list lorem ipsum dolor sit amet nunc felis dolor lorem ipsum sit amet </li>
+                    <li>Third item in the list</li>
+                </ul>  
+                <p style="margin-top: 40px;">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis posuere ligula.</p>
+                <p style="margin-top: 40px;">Thanks for reading,</br>Mika</p>        
+            </div>
+
+            <div class="sharebtn row" style="width: 100%;margin: 0 auto;">
+                <div class="col d-flex justify-content-center align-items-center" style="border: 1px solid rgba(0, 0, 0, 0.08);padding: 0;">
+                    <i class="fa-brands fa-facebook" style="margin: 10px;"></i>
+                    <p style="
+                        margin: 20px 10px; 
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%;">
+                        Share on Facebook
+                    </p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center" style="border: 1px solid rgba(0, 0, 0, 0.08);padding: 0;">
+    
+                    <i class="fa-brands fa-twitter"></i>
+                    <p style="
+                        margin: 20px 10px; 
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%;">
+                        Share on Twitter
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog__footer">
+                <p>
+                    Tags: 
+                    <a href="">product design </a>
+                    ,
+                    <a href="">culture</a>
+                </p>
+
+                <div class="line" style="width: 100%;height: 1px;margin: 40px 0 40px;"           ></div>
+
+                <div class="blog__description">
+                    <img src="./asset/img/image 3.png" alt="">
+                    <p>
+                        <span style=" text-transform: capitalize;font-weight: 600;">Mika Matikainen</span>
+                        is a Design Founder & Advisor, Berlin School of Creative Leadership Executive MBA participant, Zippie advisor, Wolt co-founder, and Nordic Rose stakeholder.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line" style="width: 100% ;color: #000;">
+            <img src="./asset/img/Group 10.jpg" alt="">
+        </div>
+
         <div class="acticles">
-            <h1>All articles</h1>
+            <h1>What to read next</h1>
             <ul class="acticle">
                 <li>
                     <img src="./asset/img/Rectangle 12.png" alt="">
@@ -99,6 +188,15 @@
                     <p>How modern remote working tools get along with Old School Cowboy's methods</p>
                 </li>
             </ul>
+        </div>
+
+        <div class="signup">
+            <h1>Sign up for the newsletter</h1>
+            <p>If you want relevant updates occasionally, sign up for the private newsletter. Your email is never shared.</p>
+            <div class="singup__info">
+                <input type="text" placeholder="Enter your email...">
+                <button>SIGN UP</button>
+            </div>
         </div>
     </main> 
 
